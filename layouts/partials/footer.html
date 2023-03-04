@@ -1,0 +1,12 @@
+
+<footer>
+    <div class="copy">
+        {{ if not .IsHome }}{{ .Title }}<br>{{ end }}
+        <small>The JS Way {{ now.Year }}&copy;</small>
+    </div>
+
+    <div class="hugo">
+        Built with Hugo v.{{ hugo.Version }}
+    </div>
+
+</footer>

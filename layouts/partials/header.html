@@ -1,0 +1,18 @@
+
+<header>
+    <div class="logo"><a href="/">{{ .Site.Title }}</a></div>
+    {{/*  <div class="things">name: {{ .Name }}</div>  */}}
+    {{ partial "search" . }}
+    <button id="contents-btn">Contents</button>
+    <nav>
+        <a href="/search/">Search</a>
+    </nav>
+    {{/*  <div class="substr">
+        {{ $chapter := .Title }}
+        {{ $filename := .File }}
+        substr .Title -3 2: {{ substr .Title -3 2 }}<br>
+        toolhead: {{ substr "toolhead" 0 4 }}
+        <br>
+        Title: {{ substr .Site.Title -2 6 }}<br>
+    </div>  */}}
+</header>

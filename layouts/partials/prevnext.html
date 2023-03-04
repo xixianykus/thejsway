@@ -1,0 +1,12 @@
+
+<div class="prevnext">
+    
+    {{with .CurrentSection.RegularPages.ByTitle.Next . }}
+        <div class="prev"><a href="{{.RelPermalink}}">&#10094; Previous</a></div>
+    {{end}}
+
+    {{with .CurrentSection.RegularPages.ByTitle.Prev . }}
+        <div class="next"><a href="{{.RelPermalink}}">Next &#10095;</a></div>
+    {{end}}
+
+</div>

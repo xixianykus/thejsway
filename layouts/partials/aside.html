@@ -1,0 +1,12 @@
+<aside>
+    <h2>Chapters</h2>
+
+    <ol start="-3">
+        {{ $currentPage := . }}
+        {{ range where (.Site.Pages.ByParam "part") "Section" "book" }}
+        <li><a  {{ if eq $currentPage . }} class="active" {{ end -}}
+             href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+        {{ end }}
+    </ol>
+
+</aside>
